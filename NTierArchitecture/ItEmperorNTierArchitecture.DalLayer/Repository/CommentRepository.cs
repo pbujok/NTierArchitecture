@@ -29,7 +29,7 @@ namespace ItEmperorNTierArchitecture.DalLayer.Repository
                 .Where(predicate)
                 .ToListAsync();
         }
-        
+
         public virtual async Task AddAsync(Comment entity)
         {
             await DbContext.AddAsync(entity);
@@ -43,10 +43,10 @@ namespace ItEmperorNTierArchitecture.DalLayer.Repository
             }
         }
 
-        public virtual Task RemoveAsync(Comment entity)
+        public async virtual Task RemoveAsync(Comment entity)
         {
             DbContext.Remove(entity);
-            return Task.CompletedTask;
+            await Task.CompletedTask.ConfigureAwait(false);
         }
     }
 }

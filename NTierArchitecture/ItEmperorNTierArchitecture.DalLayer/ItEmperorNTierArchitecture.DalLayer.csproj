@@ -17,7 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Providers" />
+      <ProjectReference Include="..\ItEmperorNTierArchitecture.ReadModelAbstraction\ItEmperorNTierArchitecture.ReadModelAbstraction.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,6 +1,10 @@
+using ItEmperor.NTierArchitecture.Api;
 using ItEmperorNTierArchitecture.DalLayer;
 using ItEmperorNTierArchitecture.DalLayer.Entities;
+using ItEmperorNTierArchitecture.DalLayer.Providers;
 using ItEmperorNTierArchitecture.DalLayer.Repository;
+using ItEmperorNTierArchitecture.DomainLayer;
+using ItEmperorNTierArchitecture.ReadModelAbstraction;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Microsoft.EntityFrameworkCore;
@@ -22,6 +26,7 @@ builder.Services.AddDbContext<BoardDbContext>(
 builder.Services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
 builder.Services.AddTransient<IRepository<Comment>, CommentRepository>();
 builder.Services.AddTransient<ICommentService, CommentService>();
+builder.Services.AddTransient<ICommentProvider, CommentProvider>();
 
 var app = builder.Build();
 
@@ -32,12 +37,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
-
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseUnitOfWorkMiddleware(); 
 
 app.Run();

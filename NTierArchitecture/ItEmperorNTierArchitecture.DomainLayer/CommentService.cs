@@ -16,12 +16,12 @@ namespace ItEmperorNTierArchitecture.DomainLayer
             this._dateTimeProvider = _dateTimeProvider ?? throw new ArgumentNullException(nameof(_dateTimeProvider));
         }
 
-        public async Task AddComment(string content, string currentUserName)
+        public async Task AddComment(string content, string authorName)
         {
             _commentRepository.AddAsync(new Comment()
             {
                 Content = content,
-                AuthorName = currentUserName,
+                AuthorName = authorName,
                 CreationDate = _dateTimeProvider.GetCurrent(),
                 Id = Guid.NewGuid()
             });

@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItEmperorNTierArchitecture.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItEmperorNTierArchitecture.DalLayer", "ItEmperorNTierArchitecture.DalLayer\ItEmperorNTierArchitecture.DalLayer.csproj", "{FC977E78-1203-4E03-BAE9-6DEC577386C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItEmperorNTierArchitecture.ReadModel", "ItEmperorNTierArchitecture.ReadModel\ItEmperorNTierArchitecture.ReadModel.csproj", "{AD74ABBE-6B53-4345-9935-035D622B5CC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItEmperorNTierArchitecture.ReadModelAbstraction", "ItEmperorNTierArchitecture.ReadModelAbstraction\ItEmperorNTierArchitecture.ReadModelAbstraction.csproj", "{40EA4751-57F6-4935-B0A0-072AC2620C7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +26,9 @@ Global
 		{FC977E78-1203-4E03-BAE9-6DEC577386C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC977E78-1203-4E03-BAE9-6DEC577386C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC977E78-1203-4E03-BAE9-6DEC577386C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD74ABBE-6B53-4345-9935-035D622B5CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD74ABBE-6B53-4345-9935-035D622B5CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD74ABBE-6B53-4345-9935-035D622B5CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD74ABBE-6B53-4345-9935-035D622B5CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40EA4751-57F6-4935-B0A0-072AC2620C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40EA4751-57F6-4935-B0A0-072AC2620C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40EA4751-57F6-4935-B0A0-072AC2620C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40EA4751-57F6-4935-B0A0-072AC2620C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
